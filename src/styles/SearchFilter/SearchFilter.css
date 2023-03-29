@@ -1,0 +1,15 @@
+.searchfilter_container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  row-gap: 2rem;
+}
+
+@media (min-width: 0px) {
+  .searchfilter_container {
+    padding: 1.5rem 1rem;
+  }
+}
+

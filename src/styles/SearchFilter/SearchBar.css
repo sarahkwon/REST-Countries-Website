@@ -6,10 +6,10 @@
   background-color: white;
   box-shadow: 0 1px 3px  hsl(0, 0%, 52%, 25%);
   border-radius: 0.25rem;
+  align-items: center;
 }
 
 .searchBar_container input {
-  width: 23rem;
   border: 0;
   font-weight: 600;
   color: hsl(0, 0%, 52%);
@@ -23,4 +23,29 @@
 
 .icon {
   margin-right: 2rem;
+}
+
+@media (min-width: 0px) {
+  .searchBar_container input {
+    width: 100%;
+  }
+
+  .searchBar_container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  .searchBar_container input {
+    width: 23rem;
+  }
+
+  .searchBar_container {
+    width: auto;
+  }
 }
