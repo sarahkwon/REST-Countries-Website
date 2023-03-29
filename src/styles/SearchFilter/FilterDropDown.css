@@ -1,0 +1,24 @@
+
+.filterdropdown_container {
+  background-color: white;
+  box-shadow: 0 1px 3px  hsl(0, 0%, 52%, 25%);
+  border-radius: 0.25rem;
+}
+
+.filterdropdown_container select {
+  border: 0;
+  width: 12rem;
+  padding: 1rem;
+  border-right: 1rem solid transparent;
+  font-weight: 600;
+}
+
+.filterdropdown_container select:focus {
+  border: 0;
+  border-right: 1rem solid transparent;
+  outline: 0;
+}
+
+.filterdropdown_container option {
+  font-weight: 600;
+}
