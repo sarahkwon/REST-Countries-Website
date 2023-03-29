@@ -1,0 +1,26 @@
+.searchBar_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 1.125rem 2rem;
+  background-color: white;
+  box-shadow: 0 1px 3px  hsl(0, 0%, 52%, 25%);
+  border-radius: 0.25rem;
+}
+
+.searchBar_container input {
+  width: 23rem;
+  border: 0;
+  font-weight: 600;
+  color: hsl(0, 0%, 52%);
+
+}
+
+.searchBar_container input:focus {
+  border: 0;
+  outline: 0;
+}
+
+.icon {
+  margin-right: 2rem;
+}
