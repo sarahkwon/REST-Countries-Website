@@ -6,13 +6,23 @@
   border: none;
 }
 
-.dark-mode-toggle-button p {
-  line-height: 1;
-  font-size: 1rem;
-  font-weight: 600;
-}
+
 
 .fa {
   margin: 0 auto; /* keep SVG aligned with text */
   padding-right: 0.5em;
+}
+
+@media (min-width: 0px) {
+  .dark-mode-toggle-button p {
+    line-height: 1;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 600px) {
+  .dark-mode-toggle-button p {
+    font-size: 1rem;
+  }
 }

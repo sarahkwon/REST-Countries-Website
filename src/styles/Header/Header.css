@@ -4,19 +4,33 @@ header {
 }
 
 .header-contents {
-  max-width: 1440px;
+  max-width: 1290px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 0;
 
   /* center header elements */
   margin-left: auto;
   margin-right: auto;
 }
 
-h1 {
-  font-size: 1.5rem;
-  font-weight: 800;
+
+
+@media (min-width: 0px) {
+  h1 {
+    font-size: 0.85rem;  
+  }
+
+  .header-contents {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
 }
