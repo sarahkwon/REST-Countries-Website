@@ -1,0 +1,15 @@
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.country-card {
+  max-width: 300px;
+  box-shadow: 0 1px 3px  hsl(0, 0%, 52%, 25%);
+  background-color: white;
+  border-radius: 0.25rem;
+}
+
+ul {
+  list-style-type: none;
+}
