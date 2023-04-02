@@ -6,7 +6,7 @@ const FilterDropDown = () => {
   return (
     <div className='filterdropdown_container'>
       <select id='region' name='region'>
-        <option selected disabled hidden>Filter by Region</option>
+        <option defaultValue disabled hidden>Filter by Region</option>
         <option>Some</option>
         <option>Arbitrary</option>
         <option>Options</option>
