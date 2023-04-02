@@ -2,10 +2,10 @@ import '../../styles/SearchFilter/SearchFilter.css'
 import SearchBar from './SearchBar'
 import FilterDropDown from './FilterDropDown'
 
-const SearchFilter = () => {
+const SearchFilter = ({handleSearchInputChange}) => {
   return (
       <div className='searchfilter_container'>
-        <SearchBar/>
+        <SearchBar handleSearchInputChange={handleSearchInputChange}/>
         <FilterDropDown/>
       </div>
   )

@@ -3,8 +3,7 @@ import CountryCard from "./CountryCard"
 import '../../styles/Countries/Countries.css'
 import CountryService from '../../services/countries.js'
 
-const Countries = () => {
-
+const Countries = ({ searchInput }) => {
   //grab from restcountries API here
   const [countriesData, setCountriesData] = useState([])
 
@@ -18,19 +17,22 @@ const Countries = () => {
       })
   }, [])
 
-  console.log(countriesData)
   return (
     <section className='container'>
-      {countriesData.map((country, idx) => 
-        <CountryCard 
-          key={idx}
-          flags={country.flags}
-          name={country.name} 
-          population={country.population} 
-          region={country.region} 
-          capital={country.capital}
-        />
-      )}
+      {countriesData
+        .filter((country) =>  //filter based on search bar
+          country.name.common.toLowerCase().includes(searchInput.toLowerCase()))
+        .map((country, idx) => //then render the filtered array
+          <CountryCard 
+            key={idx}
+            flags={country.flags}
+            name={country.name} 
+            population={country.population} 
+            region={country.region} 
+            capital={country.capital}
+          />
+        )
+      }
     </section>
   );
 }
