@@ -21,8 +21,8 @@ const Countries = ({ searchInput, regionFilter }) => {
     <section className='container'>
       {countriesData
         .filter((country) => //filter based on search bar
-          country.name.common.toLowerCase().includes(searchInput.toLowerCase()) && 
-          (regionFilter === 'default' || regionFilter === 'all') ? true : country.region.toLowerCase() === regionFilter) 
+          (country.name.common.toLowerCase().includes(searchInput.toLowerCase()) && 
+          ((regionFilter === 'default' || regionFilter === 'all') ? true : country.region.toLowerCase() === regionFilter)))
         .map((country, idx) => //then render the filtered array
           <CountryCard 
             key={idx}
