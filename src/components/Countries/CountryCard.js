@@ -1,24 +1,24 @@
 
 import '../../styles/Countries/CountryCard.css'
 
-const CountryCard = () => {
+const CountryCard = ({flags, name, population, region, capital}) => {
   return (
     <article className='country-card'>
-      <img src="https://flagcdn.com/us.svg" alt='Flag of America'/>
+      <img src={flags.svg} alt={flags.alt}/>
       <div className='desc-container'>
-        <h2>Country Name</h2>
+        <h2>{name.common}</h2>
         <ul className='desc'>
           <li>
             <b>Population: </b>
-            999,999,999
+            {population}
           </li>
           <li>
             <b>Region: </b>
-            Americas
+            {region}
           </li>
           <li>
             <b>Capital: </b>
-            Washington D.C.
+            {capital}
           </li>
         </ul>
       </div>

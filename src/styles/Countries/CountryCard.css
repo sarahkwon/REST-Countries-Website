@@ -1,11 +1,12 @@
 img {
-  width: 100%;
   object-fit: cover;
   border-radius: 0.375rem 0.375rem 0 0;
+  height: 10rem;
+  width: 100%;
 }
 
 .country-card {
-  max-width: 18rem;
+  width: 16.5rem;
   box-shadow: 0 1px 3px  hsl(0, 0%, 52%, 25%);
   background-color: white;
   border-radius: 0.375rem;
