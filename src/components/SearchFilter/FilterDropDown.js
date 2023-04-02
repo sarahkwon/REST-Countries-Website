@@ -2,19 +2,22 @@
 
 import '../../styles/SearchFilter/FilterDropDown.css'
 
-const FilterDropDown = () => {
+const FilterDropDown = ({ selectedDropDown, handleSelectedDropDownChange, dropDownOptions }) => {
+  
   return (
     <div className='filterdropdown_container'>
-      <select id='region' name='region' defaultValue={'default'}>
-        <option value='default' disabled hidden>Filter by Region</option>
-        <option>Some</option>
-        <option>Arbitrary</option>
-        <option>Options</option>
-        <option>That</option>
-        <option>Will</option>
-        <option>Be</option>
-        <option>Mapped</option>
-        <option>Out</option>
+      <select
+        id='region' 
+        name='region' 
+        onChange={handleSelectedDropDownChange}
+        value={selectedDropDown}
+      >
+        
+        {dropDownOptions.map((option,idx) => {
+          return option.value === 'default' ? 
+            <option key={idx} value={option.value} disabled hidden>{option.label}</option> : 
+            <option key={idx} value={option.value}>{option.label}</option>
+        })}
       </select>
     </div>
   )
