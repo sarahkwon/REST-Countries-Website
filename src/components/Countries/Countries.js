@@ -20,7 +20,7 @@ const Countries = ({ searchInput, regionFilter }) => {
   return (
     <section className='container'>
       {countriesData
-        .filter((country) => //filter based on search bar
+        .filter((country) => //filter based on search bar and dropdown menu
           (country.name.common.toLowerCase().includes(searchInput.toLowerCase()) && 
           ((regionFilter === 'default' || regionFilter === 'all') ? true : country.region.toLowerCase() === regionFilter)))
         .map((country, idx) => //then render the filtered array
