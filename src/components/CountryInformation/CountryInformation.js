@@ -50,7 +50,7 @@ const CountryInformation = ({ country }) => {
           </li>
         </ul>
         <span>
-          <b>Border Countries: </b>
+          <b>Border Countries: </b> 
           {country.borders ? <BorderCountriesList borderCountries={country.borders}/> : 'none'}
         </span>
         

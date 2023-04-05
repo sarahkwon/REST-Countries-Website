@@ -1,0 +1,15 @@
+.border-country-button {
+  padding: 0.25rem 1rem;
+  max-width: 10rem;
+  font-size: 14px;
+  border: none;
+  background-color: white;
+  box-shadow: 0 1px 3px  hsl(0, 0%, 52%, 40%);
+  margin: 5px 5px 5px 0;
+}
+
+@media (min-width: 768px) {
+  .border-countries-list {
+    display: inline;
+  }
+}
