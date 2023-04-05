@@ -8,7 +8,7 @@ const CountryCard = ({flags, name, population, region, capital}) => {
   
 
   return (
-    <article className='country-card' onClick={() => navigate(`/${name.common}`)}>
+    <article className='country-card' onClick={() => navigate(`/${name.common}`)} tabIndex={0}>
       <img src={flags.svg} alt={flags.alt}/>
       <div className='desc-container'>
         <h2>{name.common}</h2>

@@ -3,7 +3,20 @@
   box-shadow: 0 1px 3px  hsl(0, 0%, 52%, 25%);
   background-color: white;
   border-radius: 0.375rem;
+  cursor: pointer;
+  border: 1px solid hsl(0, 0%, 52%, 0%); /* added this border to keep it from shifting other cards on hover */
+
+  
 }
+
+.country-card:hover, 
+.country-card:focus {
+  transition: all 0.1s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  border: 1px solid hsl(0, 0%, 52%, 50%);
+}
+
+
 
 .country-card img {
   object-fit: cover;
