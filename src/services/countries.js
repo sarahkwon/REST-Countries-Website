@@ -11,10 +11,20 @@ const getFiltered = async (...fields) => {
   
 }
 
+const getCountryByName = async (countryName) => {
+  try {
+    const response = await axios.get(`${baseUrl}/name/${countryName}`)
+    return response
+  } catch (err) {
+    console.log(err.response.data)
+  }
+}
+
 
 
 const exportedObject = {
-  getFiltered
+  getFiltered,
+  getCountryByName
 };
 
 

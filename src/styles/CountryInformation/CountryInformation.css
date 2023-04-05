@@ -1,0 +1,8 @@
+.country-information {
+  padding-left: 200px;
+}
+
+.country-information ul {
+  list-style-type: none;
+  columns: 2;
+}
