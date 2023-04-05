@@ -1,13 +1,11 @@
 import { useNavigate } from 'react-router-dom'
 import '../../styles/Countries/CountryCard.css'
+import utility from '../../services/utility.js'
 
 const CountryCard = ({flags, name, population, region, capital}) => {
   const navigate = useNavigate()
 
-  //formats large numbers with commas (1000 --> 1,000)
-  const formatNumber = (number) => {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-  }
+  
 
   return (
     <article className='country-card' onClick={() => navigate(`/${name.common}`)}>
@@ -17,7 +15,7 @@ const CountryCard = ({flags, name, population, region, capital}) => {
         <ul className='desc'>
           <li>
             <b>Population: </b>
-            {formatNumber(population)}
+            {utility.formatNumber(population)}
           </li>
           <li>
             <b>Region: </b>

@@ -1,4 +1,5 @@
 import '../../styles/CountryInformation/CountryInformation.css'
+import utility from '../../services/utility.js'
 
 const CountryInformation = ({ country }) => {
   console.log(country)
@@ -12,7 +13,7 @@ const CountryInformation = ({ country }) => {
         </li>
         <li>
           <b>Population: </b>
-          {country.population}
+          {utility.formatNumber(country.population)}
         </li>
         <li>
           <b>Region: </b>
