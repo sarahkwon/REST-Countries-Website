@@ -1,8 +1,77 @@
 .country-information {
-  padding-left: 200px;
+  padding-bottom: 100px;
+
 }
 
 .country-information ul {
   list-style-type: none;
-  columns: 2;
+  column-gap: 3.5rem;
+  padding-bottom: 4rem;
+}
+
+.country-information li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.country-information img {
+  width: 100%;
+  margin: 0.75rem 0;
+}
+
+.country-information h2 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.li-gap {
+  margin-top: 3rem;
+}
+
+.center {
+  margin: auto 0;
+}
+
+@media (min-width: 600px) {
+  .country-information li {
+    font-size: 1rem;
+  }
+
+  .country-information h2 {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .country-information {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    column-gap: 3rem;
+  }
+
+  .country-information li {
+    margin-bottom: 10px;
+  }
+
+  .country-information ul {
+    padding-bottom: 2rem;
+    columns: 2;
+  }
+
+  .li-gap {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .country-information {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    column-gap: 9rem;
+  }
+
 }

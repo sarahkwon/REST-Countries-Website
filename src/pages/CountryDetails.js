@@ -6,6 +6,8 @@ import CountryInformation from '../components/CountryInformation/CountryInformat
 
 import CountryService from '../services/countries'
 
+import '../styles/CountryDetails.css'
+
 const CountryDetails = () => {
   const { countryName } = useParams() //get the country's name in the url
 
@@ -28,10 +30,12 @@ const CountryDetails = () => {
   }
 
   return (
-    <main>
-      <BackButton/>
+    <div className='Country-Details'>
+      <div className='button-container'>
+        <BackButton/>
+      </div>
       <CountryInformation country={countryData[0]}/>
-    </main>
+    </div>
   );
 }
 

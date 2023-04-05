@@ -20,12 +20,22 @@ const getCountryByName = async (countryName) => {
   }
 }
 
+const getCountryNamesByCode = async (codes) => {
+  try {
+    const response = await axios.get(`${baseUrl}/alpha?codes=${codes.join(',')}&fields=name`)
+    return response
+  } catch (err) {
+    console.log(err.response.data)
+  }
+}
 
 
-const exportedObject = {
+
+const CountryService = {
   getFiltered,
-  getCountryByName
+  getCountryByName,
+  getCountryNamesByCode
 };
 
 
-export default exportedObject
+export default CountryService
