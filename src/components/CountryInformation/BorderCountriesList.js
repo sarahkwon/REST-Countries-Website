@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react"
 import CountryService from "../../services/countries"
+import { useNavigate } from "react-router-dom"
 
 const BorderCountriesList = (borderCountries) => {
+  const navigate = useNavigate()
   const [loading, setLoading] = useState(true)
   const [borderCountryData, setBorderCountryData] = useState()
 
@@ -17,6 +19,10 @@ const BorderCountriesList = (borderCountries) => {
       })
   }, [borderCountries])
 
+  const handleBorderCountryButtonClick = (countryName) => {
+    navigate(`/${countryName}`)
+  }
+
   if (loading) {
     return null
   }
@@ -25,7 +31,7 @@ const BorderCountriesList = (borderCountries) => {
     <div>
       {borderCountryData.map((country, idx) => {
         return (
-          <button key={idx}>
+          <button key={idx} className='border-country-button' onClick={() => { handleBorderCountryButtonClick(country.name.common)}}>
             {country.name.common}
           </button>
         )
