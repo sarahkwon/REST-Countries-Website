@@ -33,13 +33,13 @@ Users should be able to:
 
 #### Light Mode 
 
-![image](https://user-images.githubusercontent.com/55962587/230546160-2eedd148-0d63-4872-9979-056585f01622.png)
-![image](https://user-images.githubusercontent.com/55962587/230546200-ac1c1e84-9c40-4381-a1aa-c72fe903b5f4.png)
+![image](https://user-images.githubusercontent.com/55962587/230550411-320ec0fa-e903-4fa4-b157-13c0a218eba9.png)
+![image](https://user-images.githubusercontent.com/55962587/230550366-acf07875-9b0d-4ae0-8596-3f35b4abe70b.png)
 
 #### Dark Mode 
 
-![image](https://user-images.githubusercontent.com/55962587/230546275-d5913cd1-0d66-47eb-b2d9-633d4a017aa7.png)
-![image](https://user-images.githubusercontent.com/55962587/230546244-2d372107-81a0-4020-8a79-237c1dbe9215.png)
+![image](https://user-images.githubusercontent.com/55962587/230550317-f707b774-60bd-487d-a132-d40278643b6e.png)
+![image](https://user-images.githubusercontent.com/55962587/230550266-7c1c29ff-f8bc-4004-bae4-e1c296bf2ad4.png)
 
 ### Links
 
