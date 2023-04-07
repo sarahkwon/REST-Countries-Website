@@ -3,13 +3,13 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 3rem 5rem;
-  row-gap: 2rem;
+  padding: 1.5rem 1rem;
+  row-gap: 5rem;
 }
 
-@media (min-width: 0px) {
+@media (min-width: 768px) {
   .searchfilter_container {
-    padding: 1.5rem 1rem;
+    padding: 3rem 1rem;
   }
 }
 

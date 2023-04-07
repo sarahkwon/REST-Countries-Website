@@ -8,7 +8,7 @@ const DarkModeToggleButton = ({ switchTheme, theme }) => {
   return (
     <button className='dark-mode-toggle-button' onClick={switchTheme}>
       {theme === 'light' ? <FontAwesomeIcon icon={faMoon} className='fa'/> : <FontAwesomeIcon icon={faMoonSolid} className='fa'/>}
-      <p>{theme === 'light' ? 'Light' : 'Dark'} Mode</p>
+      {theme === 'light' ? 'Light' : 'Dark'} Mode
     </button>
   )
 }

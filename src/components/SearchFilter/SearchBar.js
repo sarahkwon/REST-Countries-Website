@@ -9,7 +9,6 @@ const SearchBar = ({ handleSearchInputChange }) => {
     <div className={`searchBar_container`}>
       <FontAwesomeIcon icon={faMagnifyingGlass} className='icon'/>
       <input 
-        type='text'
         id='countryName'
         name='countryName'
         placeholder='Search for a country...'

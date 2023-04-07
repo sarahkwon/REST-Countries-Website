@@ -15,9 +15,9 @@
 }
 
 @media (min-width: 0px) {
-  .dark-mode-toggle-button p {
+  .dark-mode-toggle-button {
     line-height: 1;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--text-primary);
   }

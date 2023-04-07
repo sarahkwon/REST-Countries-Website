@@ -27,7 +27,7 @@ const Countries = ({ searchInput, regionFilter }) => {
   }
 
   return (
-    <section className='container'>
+    <div className='container'>
       {countriesData
         .filter((country) => //filter based on search bar and dropdown menu
           (country.name.common.toLowerCase().includes(searchInput.toLowerCase()) && 
@@ -43,7 +43,7 @@ const Countries = ({ searchInput, regionFilter }) => {
           />
         )
       }
-    </section>
+    </div>
   );
 }
 
