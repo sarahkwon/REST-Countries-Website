@@ -5,7 +5,7 @@ const RootLayout = ({ switchTheme, theme }) => {
   return (
     <div>
       <Header switchTheme={switchTheme} theme={theme}/>
-      <Outlet context={theme}/>
+      <Outlet/>
     </div>
     
   )

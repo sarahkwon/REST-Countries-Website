@@ -26,7 +26,7 @@ function App() {
   console.log('theme:', theme)
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<RootLayout switchTheme={switchTheme}/>}>
+      <Route path='/' element={<RootLayout switchTheme={switchTheme} theme={theme}/>}>
         <Route index element={<Home />}/>
         <Route path=':countryName' element={<CountryDetails/>}/>
       </Route>
