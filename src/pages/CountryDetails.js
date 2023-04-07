@@ -7,26 +7,36 @@ import CountryInformation from '../components/CountryInformation/CountryInformat
 import CountryService from '../services/countries'
 
 import '../styles/CountryDetails.css'
+import '../styles/Loading.css'
+import Loading from '../components/Loading'
 
 const CountryDetails = () => {
   const { countryName } = useParams() //get the country's name in the url
 
-  const [loading, setLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true)
   const [countryData, setCountryData] = useState()
 
   useEffect(() => {
     CountryService.getCountryByName(countryName)
       .then(result => {
         setCountryData(result.data)
-        setLoading(false)
+        setIsLoading(false)
       })
       .catch(err => {
         console.log(err.response.data)
       })
   }, [countryName])
 
-  if (loading) {
-    return null
+  if (isLoading) {
+    return (
+      <div className='Country-Details'>
+        <div className='button-container'>
+          <BackButton/>
+        </div>
+        <Loading className='loading-centered'/>
+      </div>
+      
+    )
   }
 
   return (
