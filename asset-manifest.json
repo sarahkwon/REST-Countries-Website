@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/REST-Countries-Website/static/css/main.7a91d61f.css",
+    "main.js": "/REST-Countries-Website/static/js/main.bbe80f2f.js",
+    "static/js/787.28cb0dcd.chunk.js": "/REST-Countries-Website/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/REST-Countries-Website/index.html",
+    "main.7a91d61f.css.map": "/REST-Countries-Website/static/css/main.7a91d61f.css.map",
+    "main.bbe80f2f.js.map": "/REST-Countries-Website/static/js/main.bbe80f2f.js.map",
+    "787.28cb0dcd.chunk.js.map": "/REST-Countries-Website/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a91d61f.css",
+    "static/js/main.bbe80f2f.js"
+  ]
+}
