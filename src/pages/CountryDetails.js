@@ -40,12 +40,14 @@ const CountryDetails = () => {
   }
 
   return (
-    <div className='Country-Details'>
-      <div className='button-container'>
-        <BackButton/>
+    <main>
+      <div className='Country-Details'>
+        <div className='button-container'>
+          <BackButton/>
+        </div>
+        <CountryInformation country={countryData[0]}/>
       </div>
-      <CountryInformation country={countryData[0]}/>
-    </div>
+    </main>
   );
 }
 
