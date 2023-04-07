@@ -1,7 +1,7 @@
 
 .filterdropdown_container {
-  background-color: white;
-  box-shadow: 0 1px 3px  hsl(0, 0%, 52%, 25%);
+  background-color: var(--elements);
+  box-shadow: 0 1px 3px  var(--shadows);
   border-radius: 0.25rem;
 }
 
@@ -11,6 +11,8 @@
   padding: 1rem;
   border-right: 1rem solid transparent;
   font-weight: 600;
+  background-color: transparent;
+  color: var(--text-input);
 }
 
 .filterdropdown_container select:focus {
@@ -21,4 +23,5 @@
 
 .filterdropdown_container option {
   font-weight: 600;
+  background-color: var(--elements);
 }

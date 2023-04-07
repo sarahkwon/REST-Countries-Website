@@ -5,6 +5,8 @@
   /* center elements */
   margin-left: auto;
   margin-right: auto;
+
+  
 }
 
 .button-container {
@@ -12,6 +14,12 @@
 }
 
 @media (min-width: 600px) {
+  .button-container {
+    padding:3rem 0;
+  }
+}
+
+@media(min-width: 1025px) {
   .button-container {
     padding:5rem 0;
   }

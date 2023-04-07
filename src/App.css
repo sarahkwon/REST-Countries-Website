@@ -1,11 +1,9 @@
-.App {
-  max-width: 1290px;
-
-  /* center elements */
-  margin-left: auto;
-  margin-right: auto;
-}
-
 button, select {
   cursor: pointer;
+}
+
+.App {
+  transition: all .5s;
+  min-height: 100vh;
+  background-color: var(--background-main);
 }

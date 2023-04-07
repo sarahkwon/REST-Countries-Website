@@ -1,6 +1,7 @@
 header {
   width: 100%;
-  box-shadow: 0 1px 3px  hsl(0, 0%, 52%, 25%);
+  box-shadow: 0 2px 4px  var(--shadows);
+  background-color: var(--elements);
 }
 
 .header-contents {
@@ -14,6 +15,7 @@ header {
   /* center header elements */
   margin-left: auto;
   margin-right: auto;
+
 }
 
 
@@ -21,6 +23,7 @@ header {
 @media (min-width: 0px) {
   h1 {
     font-size: 0.85rem;  
+    color: var(--text-primary);
   }
 
   .header-contents {

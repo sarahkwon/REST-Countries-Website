@@ -7,6 +7,27 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
-body {
-  background-color: hsl(0, 0%, 98%);
+:root {
+  --elements: hsl(0, 0%, 100%);
+  --background-main: hsl(0, 0%, 98%);
+  --text-primary: hsl(200, 15%, 8%);
+  --text-input: hsl(0, 0%, 52%);
+  --shadows: hsl(0, 0%, 52%, 25%);
+  --card-hover: hsl(0, 0%, 52%, 50%);
+  --card-hover-shadow: rgba(38, 38, 38, 0.2);
+  --border-country-shadow:  hsl(0, 0%, 52%, 40%);
+  --border-country-hover: hsl(0, 0%, 52%, 50%);
+  --back-button-shadow: hsl(0, 0%, 52%, 75%);
+}
+[data-theme='dark'] {
+  --elements: hsl(209, 23%, 22%);
+  --background-main: hsl(207, 26%, 17%);
+  --text-primary: hsl(0, 0%, 100%);
+  --text-input: hsl(0, 0%, 100%);
+  --shadows: hsla(210, 20%, 12%, 0.5);
+  --card-hover: hsla(0, 0%, 73%, 0.5);
+  --card-hover-shadow: hsla(207, 20%, 9%, 0.25);
+  --border-country-shadow: hsla(207, 20%, 9%, 0.5);
+  --border-country-hover: hsla(0, 0%, 73%, 0.5);
+  --back-button-shadow: hsla(207, 20%, 9%, 0.75);
 }

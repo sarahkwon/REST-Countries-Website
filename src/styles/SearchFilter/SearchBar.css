@@ -3,8 +3,8 @@
   flex-direction: row;
   justify-content: left;
   padding: 1.125rem 2rem;
-  background-color: white;
-  box-shadow: 0 1px 3px  hsl(0, 0%, 52%, 25%);
+  background-color: var(--elements);
+  box-shadow: 0 1px 3px var(--shadows);
   border-radius: 0.25rem;
   align-items: center;
 }
@@ -12,8 +12,14 @@
 .searchBar_container input {
   border: 0;
   font-weight: 600;
-  color: hsl(0, 0%, 52%);
+  background-color: transparent;
+  color: var(--text-input);
 
+}
+
+.searchBar_container input::placeholder {
+  color: var(--text-input);
+  font-weight: 300;
 }
 
 .searchBar_container input:focus {
@@ -23,6 +29,7 @@
 
 .icon {
   margin-right: 2rem;
+  color: var(--text-input)
 }
 
 @media (min-width: 0px) {

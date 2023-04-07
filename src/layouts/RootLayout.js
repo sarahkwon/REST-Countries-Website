@@ -1,13 +1,12 @@
 import { Outlet } from 'react-router-dom'
 import Header from '../components/Header/Header'
 
-const RootLayout = () => {
+const RootLayout = ({ switchTheme, theme }) => {
   return (
     <div>
-      <Header/>
-
+      <Header switchTheme={switchTheme} theme={theme}/>
       <main>
-        <Outlet/>
+        <Outlet context={theme}/>
       </main>
     </div>
     

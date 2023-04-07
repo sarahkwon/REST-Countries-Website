@@ -1,6 +1,6 @@
 .country-information {
   padding-bottom: 100px;
-
+  height: 100%;
 }
 
 .country-information ul {
@@ -10,6 +10,7 @@
 }
 
 .country-information li {
+  color: var(--text-primary);
   font-size: 14px;
   margin-bottom: 10px;
 }
@@ -20,9 +21,14 @@
 }
 
 .country-information h2 {
+  color: var(--text-primary);
   font-weight: 800;
   font-size: 1.5rem;
   margin: 1.5rem 0;
+}
+
+.country-information span {
+  color: var(--text-primary);
 }
 
 .li-gap {
@@ -72,6 +78,11 @@
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     column-gap: 9rem;
+  }
+
+  .country-information {
+    padding-bottom: 3rem;
+  
   }
 
 }

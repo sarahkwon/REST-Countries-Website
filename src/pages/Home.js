@@ -15,6 +15,7 @@ const dropDownOptions = [
 ]
 
 const Home = () => {
+
   const [searchInput, setSearchInput] = useState('')
   const [selectedDropDown, setSelectedDropDown] = useState(dropDownOptions[0].value)
 
