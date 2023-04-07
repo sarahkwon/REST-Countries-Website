@@ -12,16 +12,18 @@
   border-right: 1rem solid transparent;
   font-weight: 600;
   background-color: transparent;
-  color: var(--text-input);
+  color: var(--text-primary);
 }
 
 .filterdropdown_container select:focus {
   border: 0;
   border-right: 1rem solid transparent;
   outline: 0;
+  color: var(--text-primary);
 }
 
 .filterdropdown_container option {
   font-weight: 600;
   background-color: var(--elements);
+  color: var(--text-primary);
 }

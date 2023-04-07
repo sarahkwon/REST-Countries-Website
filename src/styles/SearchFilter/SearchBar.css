@@ -19,7 +19,7 @@
 
 .searchBar_container input::placeholder {
   color: var(--text-input);
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .searchBar_container input:focus {
